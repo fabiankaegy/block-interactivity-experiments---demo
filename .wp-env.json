@@ -1,0 +1,10 @@
+{
+	"plugins": [
+		"https://downloads.wordpress.org/plugin/gutenberg.latest-stable.zip",
+		"https://github.com/WordPress/block-hydration-experiments/releases/latest/download/block-interactivity-experiments.zip",
+		"."
+	],
+	"config": {
+		"PERMALINK_STRUCTURE": "/%postname%/"
+	}
+}
