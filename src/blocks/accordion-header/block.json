@@ -1,0 +1,89 @@
+{
+	"apiVersion": 2,
+	"name": "tenup/accordion-header",
+	"description": "A collapsible accordion",
+	"title": "Accordion Header",
+	"category": "layout",
+	"keywords": [
+		"accordion",
+		"collapsible",
+		"toggle"
+	],
+	"parent": [
+		"tenup/accordion"
+	],
+	"supports": {
+		"html": false,
+		"interactivity": true,
+		"reusable": false,
+		"lock": false,
+		"spacing": {
+			"padding": true,
+			"margin": [
+				"top",
+				"bottom"
+			],
+			"blockGap": true
+		},
+		"__experimentalBorder": {
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true,
+			"__experimentalDefaultControls": {
+				"radius": true,
+				"style": true,
+				"width": true
+			}
+		},
+		"__experimentalLayout": {
+			"allowSwitching": false,
+			"allowInheriting": false,
+			"allowVerticalAlignment": true,
+			"allowOrientation": false,
+			"default": {
+				"type": "flex",
+				"align": "center",
+				"justifyContent": "space-between",
+				"flexWrap": "nowrap"
+			}
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"__experimentalFontFamily": true,
+			"__experimentalFontStyle": true,
+			"__experimentalFontWeight": true,
+			"__experimentalTextTransform": true,
+			"__experimentalTextDecoration": true,
+			"__experimentalLetterSpacing": true,
+			"__experimentalDefaultControls": {
+				"fontSize": true
+			}
+		},
+		"color": {
+			"background": true,
+			"text": true
+		}
+	},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"activeTextColor": {
+			"type": "string"
+		},
+		"activeBackgroundColor": {
+			"type": "string"
+		},
+		"iconPosition": {
+			"type": "string",
+			"default": "right"
+		}
+	},
+	"render": "file:./render.php",
+	"editorScript": "file:./index.js",
+	"style": "file:./style.css",
+	"viewScript": "file:./view.js"
+}

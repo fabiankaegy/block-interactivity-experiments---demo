@@ -1,0 +1,42 @@
+.wp-block-tenup-accordion {
+	box-sizing: border-box;
+}
+
+.wp-block-tenup-accordion * > * {
+	box-sizing: border-box;
+}
+
+.wp-block-tenup-accordion-content {
+	height: 0;
+	overflow: hidden;
+	transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.wp-block-tenup-accordion-content[aria-hidden="true"] {
+	padding-bottom: 0 !important;
+	padding-top: 0 !important;
+}
+
+.wp-block-tenup-accordion-content[aria-hidden="false"] {
+	display: block;
+}
+
+.wp-block-tenup-accordion.is-selected .wp-block-tenup-accordion-content,
+.wp-block-tenup-accordion.has-child-selected .wp-block-tenup-accordion-content {
+	display: block;
+	height: 100%;
+}
+
+[data-type="tenup/accordion"] .wp-block-tenup-accordion-content {
+	transition: none !important;
+}
+
+.wp-block-tenup-accordion:not(.is-selected) .wp-block-tenup-accordion-content,
+.wp-block-tenup-accordion:not(.has-child-selected) .wp-block-tenup-accordion-content {
+	padding-bottom: 0 !important;
+	padding-top: 0 !important;
+}
+
+.wp-block-tenup-accordion.is-layout-flex {
+	align-items: stretch !important;
+}
