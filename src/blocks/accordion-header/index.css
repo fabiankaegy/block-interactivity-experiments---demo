@@ -1,0 +1,30 @@
+.wp-block-tenup-accordion-header {
+	appearance: none;
+	background-color: transparent;
+	border-color: transparent;
+	border-width: 0;
+	padding: 0;
+	width: 100%;
+	font-size: 1rem;
+	flex-shrink: 0;
+	cursor: pointer;
+}
+
+.wp-block-tenup-accordion-header.icon-position-left {
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+}
+
+.wp-block-tenup-accordion-item__title {
+	text-align: left;
+}
+
+.wp-block-tenup-accordion-item__icon {
+	display: flex;
+	width: 1rem;
+	fill: currentColor;
+}
+
+.wp-block-tenup-accordion-item {
+	overflow: hidden;
+}

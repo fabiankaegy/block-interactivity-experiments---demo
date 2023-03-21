@@ -1,0 +1,64 @@
+{
+	"apiVersion": 2,
+	"name": "tenup/accordion-content",
+	"description": "A collapsible accordion",
+	"title": "Accordion Content",
+	"category": "layout",
+	"keywords": [
+		"accordion",
+		"collapsible",
+		"toggle"
+	],
+	"parent": [
+		"tenup/accordion"
+	],
+	"supports": {
+		"html": false,
+		"interactivity": true,
+		"reusable": false,
+		"lock": false,
+		"spacing": {
+			"padding": true,
+			"margin": [
+				"top",
+				"bottom"
+			]
+		},
+		"__experimentalBorder": {
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true,
+			"__experimentalDefaultControls": {
+				"radius": true,
+				"style": true,
+				"width": true
+			}
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"__experimentalFontFamily": true,
+			"__experimentalFontStyle": true,
+			"__experimentalFontWeight": true,
+			"__experimentalTextTransform": true,
+			"__experimentalTextDecoration": true,
+			"__experimentalLetterSpacing": true,
+			"__experimentalDefaultControls": {
+				"fontSize": true
+			}
+		},
+		"color": {
+			"background": true,
+			"text": true
+		}
+	},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"render": "file:./render.php",
+	"editorScript": "file:./index.js"
+}
