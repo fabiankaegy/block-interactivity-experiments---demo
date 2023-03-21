@@ -12,7 +12,7 @@
 
 ?>
 
-<button <?php echo get_block_wrapper_attributes(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?> data-wp-on:click="actions.accordion.toggle" data-wp-bind:aria-expanded="context.isExpanded">
+<button <?php echo get_block_wrapper_attributes(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?> data-wp-on.click="actions.accordion.toggle" data-wp-bind.aria-expanded="context.isExpanded">
 	<span class="wp-block-tenup-accordion-item__title">
 		<?php echo wp_kses_post( $attributes['title'] ); ?>
 	</span>

@@ -12,7 +12,7 @@
 
 ?>
 
-<div <?php echo get_block_wrapper_attributes(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?> data-wp-bind:aria-hidden="!context.isExpanded">
+<div <?php echo get_block_wrapper_attributes(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?> data-wp-bind.aria-hidden="!context.isExpanded" >
 	<?php
 	/*
 	* the block_content is the html generated from innerBlocks
